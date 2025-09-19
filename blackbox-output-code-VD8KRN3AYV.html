@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MD Abulais Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- React & ReactDOM CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center p-6">
+  <div id="root" class="w-full max-w-4xl"></div>
+
+  <script type="text/javascript">
+    const e = React.createElement;
+
+    function Portfolio() {
+      return e(
+        "main",
+        { className: "min-h-screen bg-gray-50 p-6 flex items-center justify-center" },
+        e(
+          "div",
+          {
+            className:
+              "max-w-4xl w-full bg-white shadow-lg rounded-2xl p-8 grid md:grid-cols-3 gap-8",
+          },
+          // Left column
+          e(
+            "aside",
+            { className: "md:col-span-1 flex flex-col items-center text-center" },
+            e(
+              "div",
+              {
+                className:
+                  "w-40 h-40 rounded-full overflow-hidden border-4 border-gray-200 bg-white shadow-sm",
+              },
+              e("img", {
+                src: "profile.png",
+                alt: "MD Abulais",
+                className: "w-full h-full object-cover object-center",
+              })
+            ),
+            e("h1", { className: "mt-4 text-xl font-semibold" }, "MD ABULAIS"),
+            e(
+              "p",
+              { className: "text-sm text-gray-600 mt-1" },
+              "BCA Graduate | DBMS • Data Analysis • System Admin"
+            ),
+            e(
+              "div",
+              { className: "mt-4 text-sm text-gray-700 w-full" },
+              e("p", null, e("strong", null, "Location:"), " Lucknow, Uttar Pradesh"),
+              e("p", { className: "mt-1" }, e("strong", null, "Phone:"), " 8986712819"),
+              e("p", { className: "mt-1" }, e("strong", null, "Email:"), " laisabu790@gmail.com"),
+              e(
+                "p",
+                { className: "mt-1" },
+                e("strong", null, "GitHub: "),
+                e(
+                  "a",
+                  {
+                    href: "https://github.com/sheikhabu1-pixel",
+                    className: "text-indigo-600",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  },
+                  "github.com/sheikhabu1-pixel"
+                )
+              )
+            ),
+            e(
+              "a",
+              {
+                href: "MD_Abulais_ATS_CV_NoLinkedIn.pdf",
+                download: true,
+                className:
+                  "mt-6 inline-block px-4 py-2 bg-indigo-600 text-white rounded-lg shadow",
+              },
+              "Download CV (PDF)"
+            )
+          ),
+          // Right column
+          e(
+            "section",
+            { className: "md:col-span-2" },
+            e(
+              "section",
+              { className: "mb-6" },
+              e("h2", { className: "text-lg font-semibold" }, "Professional Summary"),
+              e(
+                "p",
+                { className: "text-gray-700 mt-2" },
+                "Detail-oriented and motivated ",
+                e("strong", null, "BCA graduate (2025)"),
+                " with strong expertise in ",
+                e(
+                  "strong",
+                  null,
+                  "Database Management Systems (DBMS), data analysis, and data entry operations"
+                ),
+                ". Skilled in ",
+                e("strong", null, "SQL, Python, C, Power BI, and Tally ERP"),
+                ", with hands-on experience in data handling, reporting, and workflow optimization. Adept at ensuring data accuracy, security, and efficient system administration. Proficient in English communication, team collaboration, and management skills, with a proven ability to adapt to new technologies and deliver effective results."
+              )
+            ),
+            e(
+              "section",
+              { className: "mb-6" },
+              e("h3", { className: "text-md font-semibold" }, "Technical Skills"),
+              e(
+                "ul",
+                { className: "mt-2 grid grid-cols-2 gap-2 text-sm text-gray-700" },
+                e("li", null, e("strong", null, "Languages:"), " Python, C"),
+                e("li", null, e("strong", null, "DB & Analytics:"), " DBMS, SQL, Data Management"),
+                e("li", null, e("strong", null, "Tools:"), " MS Excel (Advanced), MS Word, PowerPoint"),
+                e("li", null, e("strong", null, "BI & ERP:"), " Power BI, Tally ERP"),
+                e(
+                  "li",
+                  null,
+                  e("strong", null, "Competencies:"),
+                  " Reporting, Workflow Automation, System Admin"
+                )
+              )
+            ),
+            e(
+              "section",
+              { className: "mb-6" },
+              e("h3", { className: "text-md font-semibold" }, "Projects"),
+              e(
+                "div",
+                { className: "mt-2 text-sm text-gray-700" },
+                e("p", { className: "font-medium" }, "Online Voting System (Academic Project)"),
+                e(
+                  "ul",
+                  { className: "list-disc ml-5 mt-1" },
+                  e("li", null, "Designed a secure, user-friendly voting platform using Python, HTML, CSS."),
+                  e("li", null, "Implemented authentication and data validation for accurate results."),
+                  e("li", null, "Focused on data security and efficient system management.")
+                )
+              )
+            ),
+            e(
+              "section",
+              { className: "mb-6" },
+              e("h3", { className: "text-md font-semibold" }, "Internship"),
+              e(
+                "p",
+                { className: "text-sm text-gray-700 mt-2" },
+                e("strong", null, "Artificial Intelligence Intern"),
+                " – YBI Foundation (Remote)"
+              ),
+              e(
+                "ul",
+                { className: "list-disc ml-5 mt-2 text-sm text-gray-700" },
+                e("li", null, "Applied ML concepts for data preprocessing and model training."),
+                e("li", null, "Worked on real-world AI tasks and strengthened algorithmic understanding.")
+              )
+            ),
+            e(
+              "section",
+              null,
+              e("h3", { className: "text-md font-semibold" }, "Certifications & Interests"),
+              e(
+                "p",
+                { className: "text-sm text-gray-700 mt-2" },
+                "Artificial Intelligence & Machine Learning (YBI Foundation); Advanced Diploma in Computer Applications (ADCA)"
+              ),
+              e(
+                "p",
+                { className: "text-sm text-gray-700 mt-2" },
+                "Interests: Technology, Global Affairs, Cricket"
+              )
+            )
+          )
+        ),
+        e(
+          "footer",
+          { className: "fixed bottom-4 right-4 text-xs text-gray-400" },
+          "Built with care • Portfolio generated"
+        )
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(e(Portfolio));
+  </script>
+</body>
+</html>
